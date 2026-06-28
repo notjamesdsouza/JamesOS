@@ -1,0 +1,72 @@
+Project Architecture
+
+yes next step
+
+git remote add origin https://github.com/notjamesdsouza/JamesOS
+
+saving command in vscode
+
+git add .
+git commit -m "Describe the changes"
+git push
+
+CERTIFICATIONS
+Replace the placeholder href="#" links with your actual credential URLs.
+For example:
+<a href="https://learn.microsoft.com/..." target="_blank">
+
+
+
+JamesOS
+│
+├── index.html
+│
+├── pages/
+│     about.html
+│     projects.html
+│     services.html
+│     learning.html
+│     contact.html
+│
+├── projects/
+│     flipkart.html
+│     seo.html
+│     automation.html
+│     powerbi.html
+│
+├── css/
+│     base.css
+│     layout.css
+│     components.css
+│     animations.css
+│     responsive.css
+│
+├── js/
+│     app.js
+│     animations.js
+│     particles.js
+│     dashboard.js
+│
+├── assets/
+│     images/
+│     icons/
+│     resume/
+│     screenshots/
+│
+└── README.md
+
+
+
+main.css
+
+layout.css
+
+case-study.css
+
+components.css
+
+animations.css
+
+responsive.css
+
+these code file are different 

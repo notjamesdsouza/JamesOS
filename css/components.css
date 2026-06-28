@@ -1,0 +1,638 @@
+/* ==========================
+        NAVIGATION
+========================== */
+
+.navbar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+padding:18px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:rgba(7,17,31,.75);
+
+backdrop-filter:blur(20px);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+z-index:999;
+
+transition:.4s;
+
+}
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:14px;
+
+}
+
+.logo-box{
+
+width:48px;
+
+height:48px;
+
+background:linear-gradient(135deg,#4F46E5,#06B6D4);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-weight:700;
+
+border-radius:14px;
+
+font-size:18px;
+
+}
+
+.logo-text h2{
+
+font-size:20px;
+
+font-weight:700;
+
+}
+
+.logo-text span{
+
+font-size:13px;
+
+color:#94A3B8;
+
+}
+
+nav ul{
+
+display:flex;
+
+gap:35px;
+
+}
+
+nav a{
+
+position:relative;
+
+font-weight:500;
+
+color:#CBD5E1;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:white;
+
+}
+
+nav a::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-8px;
+
+left:0;
+
+width:0;
+
+height:2px;
+
+background:#4F46E5;
+
+transition:.3s;
+
+}
+
+nav a:hover::after{
+
+width:100%;
+
+}
+
+.resume-btn{
+
+padding:12px 24px;
+
+background:#4F46E5;
+
+border-radius:10px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.resume-btn:hover{
+
+background:#6366F1;
+
+transform:translateY(-3px);
+
+}
+.primary-btn{
+
+padding:16px 34px;
+
+background:#4F46E5;
+
+border-radius:12px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+transform:translateY(-4px);
+
+}
+
+.secondary-btn{
+
+padding:16px 34px;
+
+border:1px solid rgba(255,255,255,.2);
+
+border-radius:12px;
+
+transition:.3s;
+
+}
+
+.secondary-btn:hover{
+
+background:#1E293B;
+
+}
+
+.dashboard{
+
+width:420px;
+
+padding:35px;
+
+background:#111827;
+
+border-radius:25px;
+
+border:1px solid rgba(255,255,255,.08);
+
+box-shadow:0 20px 60px rgba(0,0,0,.35);
+
+}
+
+.dashboard h3{
+
+margin-bottom:30px;
+
+}
+
+.status{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+margin-bottom:30px;
+
+}
+
+.green-dot{
+
+width:12px;
+
+height:12px;
+
+background:#22C55E;
+
+border-radius:50%;
+
+}
+
+.dashboard-item{
+
+padding:18px 0;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+display:flex;
+
+justify-content:space-between;
+
+}
+
+.dashboard-item span{
+
+color:#94A3B8;
+
+}
+
+.dashboard-item strong{
+
+text-align:right;
+
+}
+/*======================================================================
+GLOBAL PRIMARY BUTTON SYSTEM
+Reusable Primary Actions Across JamesOS
+======================================================================*/
+
+.btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:10px;
+
+padding:14px 28px;
+
+font-size:16px;
+
+font-weight:600;
+
+border-radius:12px;
+
+cursor:pointer;
+
+text-decoration:none;
+
+transition:all .3s ease;
+
+border:none;
+
+}
+
+.btn:hover{
+
+transform:translateY(-4px);
+
+}
+
+.btn:active{
+
+transform:translateY(-2px);
+
+}
+/*======================================================================
+PRIMARY ACTION BUTTON
+Main Call-To-Action Component
+======================================================================*/
+
+.btn-primary{
+
+background:var(--primary);
+
+color:#fff;
+
+}
+
+.btn-primary:hover{
+
+background:#4338CA;
+
+}
+/*======================================================================
+SECONDARY ACTION BUTTON
+Alternative Call-To-Action Component
+======================================================================*/
+
+.btn-secondary{
+
+background:var(--surface);
+
+border:1px solid var(--border);
+
+color:var(--text);
+
+}
+
+.btn-secondary:hover{
+
+border-color:var(--primary);
+
+}
+/*======================================================================
+OUTLINE BUTTON COMPONENT
+Transparent Action Button
+======================================================================*/
+
+.btn-outline{
+
+background:transparent;
+
+border:2px solid var(--primary);
+
+color:var(--primary);
+
+}
+
+.btn-outline:hover{
+
+background:var(--primary);
+
+color:#fff;
+
+}
+/*======================================================================
+GHOST BUTTON COMPONENT
+Minimal Navigation Button
+======================================================================*/
+
+.btn-ghost{
+
+background:none;
+
+color:var(--text);
+
+}
+
+.btn-ghost:hover{
+
+background:rgba(255,255,255,.05);
+
+}
+/*======================================================================
+UNIVERSAL BASE CARD FOUNDATION
+Reusable Card Container for JamesOS
+======================================================================*/
+
+.card{
+
+position:relative;
+
+background:var(--surface);
+
+border:1px solid var(--border);
+
+border-radius:20px;
+
+padding:30px;
+
+transition:all .35s ease;
+
+overflow:hidden;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+border-color:var(--primary);
+
+box-shadow:0 20px 45px rgba(0,0,0,.18);
+
+}
+/*======================================================================
+INTERACTIVE CARD MODIFIER
+Hover Effects & Elevation
+======================================================================*/
+
+.card--interactive{
+
+cursor:pointer;
+
+}
+
+.card--interactive:hover{
+
+transform:translateY(-10px);
+
+}
+/*======================================================================
+STATISTICS CARD LAYOUT
+Metrics & KPI Components
+======================================================================*/
+
+.card--stat{
+
+text-align:center;
+
+padding:40px 30px;
+
+}
+
+.card--stat h3{
+
+font-size:2.8rem;
+
+margin-bottom:10px;
+
+color:var(--primary);
+
+}
+
+.card--stat p{
+
+color:var(--text-light);
+
+margin:0;
+
+}
+/*======================================================================
+FEATURE PRESENTATION CARD
+Service & Deliverable Components
+======================================================================*/
+
+.card--feature{
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+.card--feature h3{
+
+margin:0;
+
+font-size:22px;
+
+}
+
+.card--feature p{
+
+line-height:1.8;
+
+color:var(--text-light);
+
+}
+/*======================================================================
+COMPACT INFORMATION CARD
+Small Summary Components
+======================================================================*/
+
+.card--compact{
+
+padding:22px;
+
+border-radius:16px;
+
+}
+/*======================================================================
+PERFORMANCE DASHBOARD CARD
+Analytics & KPI Display
+======================================================================*/
+
+.card--dashboard{
+
+text-align:center;
+
+padding:35px;
+
+}
+
+.card--dashboard h3{
+
+font-size:42px;
+
+margin-bottom:15px;
+
+color:var(--primary);
+
+}
+
+.card--dashboard small{
+
+display:block;
+
+margin-bottom:15px;
+
+color:var(--text-muted);
+
+}
+
+.card--dashboard p{
+
+margin:0;
+
+}
+/*======================================================================
+TIMELINE CONTENT CARD
+Journey & Workflow Components
+======================================================================*/
+
+.card--timeline{
+
+padding:30px;
+
+border-left:5px solid var(--primary);
+
+}
+/*======================================================================
+PROJECT SHOWCASE CARD
+Portfolio Project Components
+======================================================================*/
+
+.card--project{
+
+height:100%;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:space-between;
+
+}
+/*======================================================================
+ICON FEATURE CARD
+Icon-Based Information Layout
+======================================================================*/
+
+.card--icon{
+
+text-align:center;
+
+}
+
+.card--icon .icon{
+
+margin-bottom:20px;
+
+font-size:42px;
+
+}
+/* ==========================================================
+CONTACT ACTION BUTTON COMPONENT
+Reusable buttons for Copy / Visit actions
+========================================================== */
+
+.contact-action-btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:10px 18px;
+
+margin-top:8px;
+
+border-radius:10px;
+
+background:#4F46E5;
+
+color:#fff;
+
+font-size:15px;
+
+font-weight:600;
+
+text-decoration:none;
+
+border:none;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.contact-action-btn:hover{
+
+background:#6366F1;
+
+transform:translateY(-2px);
+
+}
+
+.contact-action-btn.copied{
+
+background:#16A34A;
+
+}
