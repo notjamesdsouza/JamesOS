@@ -1,0 +1,44 @@
+Project Architecture
+JamesOS/
+│
+├── index.html
+│
+├── pages/
+│   ├── about.html
+│   ├── resume.html
+│   ├── case-studies.html
+│   ├── services.html
+│   ├── contact.html
+│
+├── case-studies/
+│   ├── flipkart.html
+│   ├── powerbi.html
+│   ├── excel-vba.html
+│   ├── mrp.html
+│   └── listing.html
+│
+├── css/
+│   ├── variables.css
+│   ├── base.css
+│   ├── layout.css
+│   ├── components.css
+│   ├── animations.css
+│   └── responsive.css
+│
+├── js/
+│   ├── app.js
+│   ├── navigation.js
+│   ├── animations.js
+│   ├── counters.js
+│   ├── timeline.js
+│   └── typing.js
+│
+├── assets/
+│   ├── images/
+│   ├── icons/
+│   ├── logos/
+│   ├── screenshots/
+│   ├── portfolio/
+│   └── resume/
+│
+└── README.md

@@ -1,0 +1,35 @@
+:root{
+
+/* COLORS */
+
+--bg:#07111F;
+
+--surface:#111827;
+
+--surface-light:#1E293B;
+
+--primary:#4F46E5;
+
+--secondary:#06B6D4;
+
+--text:#F8FAFC;
+
+--muted:#94A3B8;
+
+--border:#233045;
+
+
+/* FONT */
+
+--font:'Poppins',sans-serif;
+
+
+/* SPACING */
+
+--section:120px;
+
+--radius:20px;
+
+--transition:.35s ease;
+
+}
