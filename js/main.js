@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* ==========================================================
 COPY TO CLIPBOARD CONTACT ACTIONS
 Handles Email & Phone copy buttons
@@ -25,7 +24,8 @@ button.textContent=originalText;
 button.classList.remove("copied");
 
 },2000);
-=======
+
+
 // ================================
 // Animated Counter
 // ================================
@@ -71,17 +71,18 @@ update();
 observer.unobserve(counter);
 
 }
->>>>>>> 7839143ddf15d5b6f0bd5697978aed0f1bd945d5
 
 });
 
 });
-<<<<<<< HEAD
-=======
+
+
+
 
 counters.forEach(counter=>{
 
 observer.observe(counter);
 
 });
->>>>>>> 7839143ddf15d5b6f0bd5697978aed0f1bd945d5
+});
+});
