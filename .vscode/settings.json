@@ -1,4 +1,106 @@
 {
+    // ==========================================================
+    // FONT & APPEARANCE
+    // ==========================================================
+
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 18,
+    "editor.fontLigatures": true,
+    "editor.padding.top": 0,
+    "editor.padding.bottom": 0,
+    "editor.minimap.enabled": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.guides.indentation": true,
+    "editor.renderWhitespace": "selection",
+    "editor.renderControlCharacters": false,
+    "editor.renderLineHighlight": "all",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+
+    // ==========================================================
+    // CODE FORMATTING
+    // ==========================================================
+
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+
+    // ==========================================================
+    // EDITOR
+    // ==========================================================
+
+    "editor.wordWrap": "off",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.trimAutoWhitespace": true,
+    "editor.copyWithSyntaxHighlighting": true,
+    "editor.multiCursorModifier": "alt",
+    "editor.links": true,
+    "editor.folding": true,
+    "editor.foldingStrategy": "auto",
+    "editor.showFoldingControls": "always",
+
+    // ==========================================================
+    // FILES
+    // ==========================================================
+
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+
+    // ==========================================================
+    // EXPLORER
+    // ==========================================================
+
+    "explorer.compactFolders": false,
+    "explorer.confirmDelete": true,
+    "explorer.confirmDragAndDrop": false,
+
+    // ==========================================================
+    // TERMINAL
+    // ==========================================================
+
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.scrollback": 10000,
+    "terminal.integrated.fontSize": 13,
+
+    // ==========================================================
+    // WORKBENCH
+    // ==========================================================
+
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.tree.indent": 20,
+    "workbench.startupEditor": "none",
+
+    // ==========================================================
+    // PYTHON
+    // ==========================================================
+
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.completeFunctionParens": true,
+
+    // ==========================================================
+    // SEARCH
+    // ==========================================================
+
+    "search.followSymlinks": false,
+    "search.smartCase": true,
+
+    // ==========================================================
+    // SPELL CHECKER
+    // ==========================================================
+
     "cSpell.words": [
         "AJIO",
         "Blinkit",

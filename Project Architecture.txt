@@ -1,5 +1,4 @@
 Project Architecture
-<<<<<<< HEAD
 
 yes next step
 
@@ -18,100 +17,7 @@ For example:
 
 
 
-JamesOS
-=======
-JamesOS/
->>>>>>> 7839143ddf15d5b6f0bd5697978aed0f1bd945d5
-│
-├── index.html
-│
-├── pages/
-<<<<<<< HEAD
-│     about.html
-│     projects.html
-│     services.html
-│     learning.html
-│     contact.html
-│
-├── projects/
-│     flipkart.html
-│     seo.html
-│     automation.html
-│     powerbi.html
-│
-├── css/
-│     base.css
-│     layout.css
-│     components.css
-│     animations.css
-│     responsive.css
-│
-├── js/
-│     app.js
-│     animations.js
-│     particles.js
-│     dashboard.js
-│
-├── assets/
-│     images/
-│     icons/
-│     resume/
-│     screenshots/
-│
-└── README.md
 
 
 
-main.css
 
-layout.css
-
-case-study.css
-
-components.css
-
-animations.css
-
-responsive.css
-
-these code file are different 
-=======
-│   ├── about.html
-│   ├── resume.html
-│   ├── case-studies.html
-│   ├── services.html
-│   ├── contact.html
-│
-├── case-studies/
-│   ├── flipkart.html
-│   ├── powerbi.html
-│   ├── excel-vba.html
-│   ├── mrp.html
-│   └── listing.html
-│
-├── css/
-│   ├── variables.css
-│   ├── base.css
-│   ├── layout.css
-│   ├── components.css
-│   ├── animations.css
-│   └── responsive.css
-│
-├── js/
-│   ├── app.js
-│   ├── navigation.js
-│   ├── animations.js
-│   ├── counters.js
-│   ├── timeline.js
-│   └── typing.js
-│
-├── assets/
-│   ├── images/
-│   ├── icons/
-│   ├── logos/
-│   ├── screenshots/
-│   ├── portfolio/
-│   └── resume/
-│
-└── README.md
->>>>>>> 7839143ddf15d5b6f0bd5697978aed0f1bd945d5

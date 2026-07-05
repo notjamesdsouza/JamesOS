@@ -1,584 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Automating Product Image Link Management with Excel VBA | James Dsouza</title>
-
 <link rel="stylesheet" href="../css/layout.css">
 <link rel="stylesheet" href="../css/case-study.css">
 <link rel="stylesheet" href="../css/responsive.css">
-
 </head>
-
 <body>
-
 <header class="project-header">
-
 <a href="../index.html">
-
 ← Back to Home
-
 </a>
-
 </header>
 <!-- =====================================
 CASE STUDY HERO
 ====================================== -->
-
 <section class="case-hero">
-
     <div class="container">
-
         <span class="case-tag">
             Excel VBA | Process Automation | Dropbox | Catalog Operations
         </span>
-
         <h1>
             Automating Product Image Link Management with Excel VBA
         </h1>
-
         <p>
-
             Designed an Excel VBA automation solution to streamline product
             image link management by organizing Dropbox image URLs,
             standardizing image sequences, and automating link arrangement for
             faster and more accurate catalog updates.
-
         </p>
-
     </div>
-
 </section>
-
 <section id="summary" class="project-summary reveal">
-
     <div class="container">
-
         <div class="section-title">
-
             <p>PROJECT SUMMARY</p>
-
             <h2>At a Glance</h2>
-
         </div>
-
         <div class="summary-grid">
-
             <div class="summary-card">
                 <span>Role</span>
                 <h3>Process Automation</h3>
             </div>
-
             <div class="summary-card">
                 <span>Technology</span>
                 <h3>Excel VBA</h3>
             </div>
-
             <div class="summary-card">
                 <span>Storage Platform</span>
                 <h3>Dropbox</h3>
             </div>
-
             <div class="summary-card">
                 <span>Business Area</span>
                 <h3>Catalog Operations</h3>
             </div>
-
             <div class="summary-card">
                 <span>Automation Type</span>
                 <h3>Image Link Management</h3>
             </div>
-
             <div class="summary-card">
                 <span>Output</span>
                 <h3>Automated Link Arrangement</h3>
             </div>
-
         </div>
-
     </div>
-
 </section>
-
 <section id="challenge" class="challenge-section reveal">
-
     <div class="container">
-
         <div class="section-title">
-
             <p>BUSINESS CHALLENGE</p>
-
             <h2>The Problem</h2>
-
         </div>
-
         <div class="content-card">
-
             <p>
-
                 During product branding updates, image URLs stored in Dropbox
                 required frequent replacement across multiple SKUs. Updating
                 these links manually was repetitive, time-consuming, and
                 increased the risk of incorrect image placement.
-
             </p>
-
             <ul>
-
                 <li>Manual replacement of image links</li>
-
                 <li>Repeated copy-and-paste work</li>
-
                 <li>High possibility of human error</li>
-
                 <li>Difficult to manage multiple product images</li>
-
                 <li>No standardized image sequence</li>
-
             </ul>
-
         </div>
-
     </div>
-
 </section>
-
 <section id="comparison" class="before-after reveal">
-
 <div class="container">
-
 <div class="section-title">
-
 <p>TRANSFORMATION</p>
-
 <h2>Before vs After</h2>
-
 </div>
-
 <div class="comparison-grid">
-
 <div class="comparison-card before">
-
 <h3>Before</h3>
-
 <ul>
-
 <li>Manual image link replacement</li>
-
 <li>Copy-paste workflow</li>
-
 <li>Inconsistent image sequence</li>
-
 <li>Time-consuming updates</li>
-
 <li>High chance of errors</li>
-
 </ul>
-
 </div>
-
 <div class="comparison-card after">
-
 <h3>After</h3>
-
 <ul>
-
 <li>Automated image arrangement</li>
-
 <li>One-click VBA execution</li>
-
 <li>Standardized image sequence</li>
-
 <li>Faster catalog updates</li>
-
 <li>Reliable output</li>
-
 </ul>
-
 </div>
-
 </div>
-
 </div>
-
 </section>
-
 <section id="objectives" class="objectives-section reveal">
-
 <div class="container">
-
 <div class="section-title">
-
 <p>OBJECTIVES</p>
-
 <h2>Project Goals</h2>
-
 </div>
-
 <div class="objective-grid">
-
 <div class="objective-card">Reduce Manual Work</div>
-
 <div class="objective-card">Improve Accuracy</div>
-
 <div class="objective-card">Standardize Image Naming</div>
-
 <div class="objective-card">Automate Link Arrangement</div>
-
 <div class="objective-card">Increase Processing Speed</div>
-
 <div class="objective-card">Improve Catalog Efficiency</div>
-
 </div>
-
 </div>
-
 </section>
-
 <section id="responsibilities" class="responsibilities-section reveal">
-
 <div class="container">
-
 <div class="section-title">
-
 <p>RESPONSIBILITIES</p>
-
 <h2>What I Worked On</h2>
-
 </div>
-
 <div class="responsibility-grid">
-
 <div class="responsibility-card">
-
 <h3>Workflow Analysis</h3>
-
 <p>
 Studied the manual process and identified repetitive tasks suitable for automation.
 </p>
-
 </div>
-
 <div class="responsibility-card">
-
 <h3>Excel VBA Development</h3>
-
 <p>
 Developed an Excel VBA solution to automate image link arrangement.
 </p>
-
 </div>
-
 <div class="responsibility-card">
-
 <h3>Dropbox Link Management</h3>
-
 <p>
 Extracted and organized product image links from Dropbox.
 </p>
-
 </div>
-
 <div class="responsibility-card">
-
 <h3>Image Standardization</h3>
-
 <p>
 Created a consistent image naming format (S, S1, S2...) for automation.
 </p>
-
 </div>
-
 <div class="responsibility-card">
-
 <h3>Testing & Validation</h3>
-
 <p>
 Validated different SKU scenarios to ensure accurate output.
 </p>
-
 </div>
-
 <div class="responsibility-card">
-
 <h3>Process Optimization</h3>
-
 <p>
 Reduced repetitive work while improving catalog consistency.
 </p>
-
 </div>
-
 </div>
-
 </div>
-
 </section>
-
 <section id="workflow" class="workflow-section reveal">
-
 <div class="container">
-
 <div class="section-title">
-
 <p>WORKFLOW</p>
-
 <h2>Automation Process</h2>
-
 </div>
-
 <div class="workflow-grid">
-
 <div class="workflow-step"><div class="step-number">01</div><h4>Dropbox Images</h4></div>
-
 <div class="workflow-step"><div class="step-number">02</div><h4>Export Links</h4></div>
-
 <div class="workflow-step"><div class="step-number">03</div><h4>Standardize Names</h4></div>
-
 <div class="workflow-step"><div class="step-number">04</div><h4>Enter Sequence</h4></div>
-
 <div class="workflow-step"><div class="step-number">05</div><h4>Run VBA</h4></div>
-
 <div class="workflow-step"><div class="step-number">06</div><h4>Automatic Link Arrangement</h4></div>
-
 </div>
-
 </div>
-
 </section>
-
 <section id="performance-dashboard" class="performance-dashboard reveal">
-
 <div class="container">
-
 <div class="section-title">
-
 <p>PERFORMANCE DASHBOARD</p>
-
 <h2>Automation Results</h2>
-
 </div>
-
 <div class="dashboard-grid">
-
 <div class="dashboard-card">
-
 <h3>Reduced</h3>
-
 <p>Manual Work</p>
-
 </div>
-
 <div class="dashboard-card">
-
 <h3>Improved</h3>
-
 <p>Accuracy</p>
-
 </div>
-
 <div class="dashboard-card">
-
 <h3>Faster</h3>
-
 <p>Processing Speed</p>
-
 </div>
-
 <div class="dashboard-card">
-
 <h3>Standardized</h3>
-
 <p>Workflow</p>
-
 </div>
-
 <div class="dashboard-card">
-
 <h3>Reliable</h3>
-
 <p>Output</p>
-
 </div>
-
 <div class="dashboard-card">
-
 <h3>Scalable</h3>
-
 <p>Automation Process</p>
-
 </div>
-
 </div>
-
 </div>
-
 </section>
-
 <section id="tools" class="tools-section reveal">
-
 <div class="container">
-
 <div class="section-title">
-
 <p>TOOLS & TECHNOLOGIES</p>
-
 <h2>Technology Stack</h2>
-
 </div>
-
 <div class="badge-group">
-
 <span>Microsoft Excel</span>
-
 <span>Excel VBA</span>
-
 <span>Dropbox</span>
-
 <span>Workflow Automation</span>
-
 <span>Catalog Operations</span>
-
 <span>Microsoft Office</span>
-
 </div>
-
 </div>
-
 </section>
-
 <section id="impact" class="impact-section reveal">
-
 <div class="container">
-
 <div class="section-title">
-
 <p>BUSINESS IMPACT</p>
-
 <h2>Project Results</h2>
-
 </div>
-
 <div class="impact-grid">
-
 <div class="impact-card">
-
 <h3>Reduced</h3>
-
 <p>Manual Work</p>
-
 </div>
-
 <div class="impact-card">
-
 <h3>Improved</h3>
-
 <p>Workflow Accuracy</p>
-
 </div>
-
 <div class="impact-card">
-
 <h3>Standardized</h3>
-
 <p>Image Naming</p>
-
 </div>
-
 <div class="impact-card">
-
 <h3>Faster</h3>
-
 <p>Catalog Updates</p>
-
 </div>
-
 </div>
-
 </div>
-
 </section>
-
 <section id="learnings" class="learnings-section reveal">
-
 <div class="container">
-
 <div class="section-title">
-
 <p>KEY LEARNINGS</p>
-
 <h2>Insights</h2>
-
 </div>
-
 <div class="learning-grid">
-
 <div class="learning-card">
-
 <h3>Automation</h3>
-
 <p>
-
 Repetitive business tasks can be streamlined through well-designed VBA automation, reducing manual effort and improving productivity.
-
 </p>
-
 </div>
-
 <div class="learning-card">
-
 <h3>Standardization</h3>
-
 <p>
-
 Creating a consistent image naming convention before automation significantly improved reliability and reduced errors.
-
 </p>
-
 </div>
-
 <div class="learning-card">
-
 <h3>Problem Solving</h3>
-
 <p>
-
 Understanding the workflow before writing code resulted in a practical solution that was easier to use and maintain.
-
 </p>
-
 </div>
-
 </div>
-
 </div>
-
 </section>
-
 <!-- =====================================
 CASE STUDY NAVIGATION
 ====================================== -->
-
 <div class="case-navigation">
-
     <div class="container">
-
         <a href="../index.html#projects" class="case-nav-btn">
-
             ← Back to Portfolio
-
         </a>
-
     </div>
-
 </div>
-
-
 </body>
-
 </html>
