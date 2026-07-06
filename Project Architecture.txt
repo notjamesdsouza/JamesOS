@@ -1,4 +1,4 @@
-Project Architecture
+oject Architecture
 
 yes next step
 
@@ -17,3 +17,11 @@ For example:
 
 
 
+css/
+variables.css
+layout.css
+components.css
+responsive.css
+main.css
+case-study
+animations

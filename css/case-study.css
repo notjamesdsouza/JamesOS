@@ -13,7 +13,7 @@ CASE STUDY
 .performance-dashboard,
 .growth-timeline-section,
 .project-highlights-section{
-    padding:120px 0;
+    padding:140px 0;
 }
 .summary-grid{
     display:grid;
@@ -315,7 +315,7 @@ CASE STUDY HERO
 padding:30px 8%;
 }
 .project-header a{
-color:white;
+color:var(--text);
 text-decoration:none;
 font-weight:600;
 }
@@ -328,7 +328,7 @@ display:inline-block;
 padding:10px 18px;
 border:1px solid rgba(255,255,255,.12);
 border-radius:30px;
-color:#06B6D4;
+color:var(--secondary);
 margin-bottom:30px;
 }
 .case-hero h1{
@@ -338,7 +338,7 @@ margin-bottom:35px;
 }
 .case-hero p{
 font-size:20px;
-color:#94A3B8;
+color:var(--text-muted);
 line-height:1.8;
 margin-bottom:50px;
 }
@@ -349,7 +349,7 @@ gap:15px;
 }
 .hero-tags span{
 padding:12px 22px;
-background:#111827;
+background:var(--surface);
 border-radius:30px;
 border:1px solid rgba(255,255,255,.12);
 }
