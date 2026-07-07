@@ -99,54 +99,29 @@ LAYOUT
 HEADER
 ==================================================*/
 .site-header{
+    height:90px;
+    padding:0;
     position:fixed;
-    top:0;
+    top:-100px;
     left:0;
     width:100%;
+    transition:all .4s ease;
     z-index:1000;
-    transition:var(--transition);
-    padding:22px 0;
 }
 .site-header.sticky{
-    background:rgba(7,17,31,.82);
-    backdrop-filter:blur(18px);
-    border-bottom:1px solid var(--border);
-    box-shadow:var(--shadow-sm);
+    padding:12px 0;
 }
-.site-header.scroll-down{
-    transform:translateY(-70%);
-}
-.site-header.scroll-up{
-    transform:translateY(0);
-}
+
 /*==================================================
 Navigation
 ==================================================*/
 .nav-wrapper{
+    height:100%;
     width:min(92%,var(--container));
     margin:auto;
     display:flex;
     justify-content:space-between;
     align-items:center;
-}
-.site-logo{
-    display:flex;
-    align-items:center;
-    gap:14px;
-}
-.site-logo-mark{
-    width:46px;
-    height:46px;
-    border-radius:14px;
-    background:var(--primary);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-weight:700;
-}
-.site-logo-text{
-    font-size:22px;
-    font-weight:700;
 }
 .site-nav{
     display:flex;
@@ -210,10 +185,11 @@ HERO
     border:1px solid var(--border);
     border-radius:40px;
     color:var(--secondary);
-    margin-bottom:30px;
+    margin-top: 20px;
+    margin-bottom:25px;
 }
 .hero h1{
-    margin-bottom:30px;
+    margin-bottom :20px;
 }
 .gradient-text{
     color:var(--primary);
@@ -610,4 +586,8 @@ margin-top:70px;
     margin-top:70px;
     margin-left:35px;
     margin-right:35px;
+}
+.contact-section{
+    padding:140px 8%;
+    grid-template-columns:repeat(2,1fr);
 }

@@ -7,8 +7,7 @@
         flex-direction:column;
         gap:60px;
     }
-    .about-grid,
-    .contact-wrapper{
+    .about-grid{
         grid-template-columns:1fr;
     }
     .toolkit-wrapper,
@@ -73,8 +72,8 @@
     .category-grid,
     .projects-grid,
     .learning-grid,
-    .certificate-grid,
     .contact-wrapper,
+    .certificate-grid,
     .footer-grid{
         grid-template-columns:1fr;
     }
@@ -124,9 +123,6 @@
         gap:15px;
         text-align:center;
     }
-    .contact-wrapper{
-        gap:40px;
-    }
     .project-card{
         padding:25px;
     }
@@ -164,4 +160,15 @@
     .section-heading{
         text-align:center;
     }
+}
+/*=========================================
+CONTACT SECTION LAYOUT
+=========================================*/
+
+.contact-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:start;
+    margin-top:70px;
 }

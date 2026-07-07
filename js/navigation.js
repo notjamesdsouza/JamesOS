@@ -1,7 +1,6 @@
 // ======================================
 // JAMESOS NAVIGATION
 // ======================================
-const header = document.querySelector(".site-header");
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".site-nav");
 const navLinks = document.querySelectorAll(".site-nav a");
@@ -47,36 +46,12 @@ function updateActiveSection(){
         }
     });
 }
-window.addEventListener("scroll",updateActiveSection);
-// =============================
-// STICKY NAVBAR
-// =============================
+window.addEventListener("scroll", updateActiveSection);
+
+const header = document.querySelector(".site-header");
+
 window.addEventListener("scroll",()=>{
-    if(window.scrollY>40){
-        header.classList.add("sticky");
-    }else{
-        header.classList.remove("sticky");
+    if(window.scrollY>50){
+        header.classList.add("show");
     }
-});
-// =============================
-// HIDE NAVBAR WHEN SCROLLING
-// =============================
-let lastScroll = 0;
-window.addEventListener("scroll",()=>{
-    const currentScroll = window.pageYOffset;
-    if(currentScroll<=0){
-        header.classList.remove("scroll-up");
-        return;
-    }
-    if(currentScroll>lastScroll &&
-       !header.classList.contains("scroll-down")){
-        header.classList.remove("scroll-up");
-        header.classList.add("scroll-down");
-    }
-    else if(currentScroll<lastScroll &&
-            header.classList.contains("scroll-down")){
-        header.classList.remove("scroll-down");
-        header.classList.add("scroll-up");
-    }
-    lastScroll=currentScroll;
 });
