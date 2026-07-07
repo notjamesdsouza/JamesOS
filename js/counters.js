@@ -5,6 +5,7 @@
 const counters = document.querySelectorAll(".counter");
 
 const startCounter = (counter) => {
+    const suffix = counter.dataset.suffix || "";
     const target = +counter.dataset.count;
     let count = 0;
 
@@ -14,10 +15,10 @@ const startCounter = (counter) => {
         count += speed;
 
         if (count < target) {
-            counter.innerText = Math.ceil(count);
+            counter.innerText = Math.ceil(count) + suffix;
             requestAnimationFrame(update);
         } else {
-            counter.innerText = target;
+            counter.innerText = target + suffix;
         }
     };
 
