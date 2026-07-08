@@ -19,17 +19,17 @@ body{
 
 .project-summary,
 .challenge-section,
+.actions-section,
+.workflow-section,
+.performance-dashboard,
+.learnings-section,
+.impact-section,
+.outcome-section,
+.tools-section,
 .before-after,
 .objectives-section,
-.responsibilities-section,
-.workflow-section,
-.tools-section,
-.impact-section,
-.learnings-section,
-.performance-dashboard,
-.growth-timeline-section,
-.project-highlights-section{
-    padding:140px 0;
+.responsibilities-section{
+    padding:100px 0;
 }
 .summary-grid{
     display:grid;
@@ -336,38 +336,70 @@ text-decoration:none;
 font-weight:600;
 }
 .case-hero{
-padding:120px 8%;
-max-width:900px;
+    padding:180px 8% 140px;
+    text-align:center;
+    background:
+        linear-gradient(rgba(11,17,32,.85),rgba(11,17,32,.92)),
+        url("../assets/images/flipkart-banner.jpg") center/cover no-repeat;
+}
+.case-hero .container{
+    max-width:1000px;
+    margin:auto;
 }
 .case-tag{
-display:inline-block;
-padding:10px 18px;
-border:1px solid rgba(255,255,255,.12);
-border-radius:30px;
-color:var(--secondary);
-margin-bottom:30px;
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:999px;
+    background:rgba(79,70,229,.15);
+    color:#818CF8;
+    font-size:15px;
+    margin-bottom:25px;
 }
 .case-hero h1{
-font-size:52px;
-line-height:1.1;
-margin-bottom:35px;
+    font-size:56px;
+    line-height:1.2;
+    margin-bottom:30px;
 }
 .case-hero p{
-font-size:20px;
-color:var(--text-muted);
-line-height:1.8;
-margin-bottom:50px;
+    max-width:850px;
+    margin:auto;
+    color:var(--text-light);
+    font-size:18px;
+    line-height:1.9;
+}
+.hero-metrics{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-top:70px;
+}
+
+.metric{
+    padding:30px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    backdrop-filter:blur(15px);
+}
+.metric h3{
+    font-size:34px;
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+.metric span{
+    color:var(--text-muted);
 }
 .hero-tags{
-display:flex;
-flex-wrap:wrap;
-gap:15px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
 }
 .hero-tags span{
-padding:12px 22px;
-background:var(--surface);
-border-radius:30px;
-border:1px solid rgba(255,255,255,.12);
+    padding:12px 22px;
+    background:var(--surface);
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,.12);
 }
 /*==============================
 Case-study Responsive
@@ -426,13 +458,32 @@ flex-direction:column;
     .tools-section,
     .impact-section,
     .learnings-section,
-    .performance-dashboard,
-    .growth-timeline-section,
-    .project-highlights-section{
+    .performance-dashboard{
     padding:80px 0;
     }
     .timeline-stage{
     width:100%;
     max-width:320px;
     }
+}
+
+.impact-card{
+background:#111827;
+padding:20px;
+border-radius:20px;
+border:1px solid var(--surface-light);
+text-align:center;
+transition:.35s;
+}
+.impact-card:hover{
+    transform:translateY(-10px);
+    border-color:var(--secondary);
+    box-shadow:0 20px 60px rgba(56,189,248,.15);
+}
+.site-header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    background:#07111F;
 }

@@ -1,4 +1,4 @@
-oject Architecture
+Project Architecture
 
 yes next step
 
@@ -15,13 +15,3 @@ Replace the placeholder href="#" links with your actual credential URLs.
 For example:
 <a href="https://learn.microsoft.com/..." target="_blank">
 
-
-
-css/
-variables.css
-layout.css
-components.css
-responsive.css
-main.css
-case-study
-animations
