@@ -11,38 +11,19 @@ html{
 }
 body{
     font-family:'Poppins',sans-serif;
-    background:#0B1120;
     color:#ffffff;
     overflow-x:hidden;
-}
-section{
-    scroll-margin-top:100px;
+    background:
+        url("../assets/images/background.webp");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    color:var(--text);
 }
 
-/* ===========================
-BACKGROUND
-=========================== */
-body::before{
-content:"";
-position:fixed;
-width:700px;
-height:700px;
-background:#4F46E5;
-filter:blur(220px);
-top:-250px;
-right:-150px;
-opacity:.15;
-z-index:-1;
-}
-body::after{
-content:"";
-position:fixed;
-width:600px;
-height:600px;
-background:#06B6D4;
-filter:blur(220px);
-bottom:-250px;
-left:-150px;
-opacity:.12;
-z-index:-1;
+section{
+    scroll-margin-top:100px;
 }

@@ -1,6 +1,22 @@
 /*==================================================
 CASE STUDY
 ==================================================*/
+body{
+    background:
+    linear-gradient(
+            rgba(7,17,31,.96),
+            rgba(7,17,31,.96)
+        ),
+        url("../assets/images/automation.webp");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    color:var(--text);
+}
+
+
 .project-summary,
 .challenge-section,
 .before-after,
@@ -23,7 +39,7 @@ CASE STUDY
 }
 .summary-card{
     background:var(--surface);
-    border:1px solid var(--border);
+    border:1px solid var(--border-line);
     border-radius:18px;
     padding:30px;
 }
