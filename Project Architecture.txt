@@ -1,0 +1,17 @@
+Project Architecture
+
+yes next step
+
+git remote add origin https://github.com/notjamesdsouza/JamesOS
+
+saving command in vscode
+
+git add .
+git commit -m "Describe the changes"
+git push
+
+CERTIFICATIONS
+Replace the placeholder href="#" links with your actual credential URLs.
+For example:
+<a href="https://learn.microsoft.com/..." target="_blank">
+

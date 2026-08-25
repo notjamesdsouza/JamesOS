@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H7ZFYCJH4J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('event', 'resume_download');
+  gtag('event', 'linkedin_click');
+  gtag('event', 'email_copy');
+
+  gtag('config', 'G-H7ZFYCJH4J');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automating Product Image Link Management Using Excel VBA | James Dsouza</title>
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/case-study.css">
+<link rel="stylesheet" href="../css/responsive.css">
+
+<body>
+<main>
+
+<header class="site-header">
+
+    <div class="nav-wrapper">
+
+        <nav class="site-nav">
+
+            <a href="../index.html">Home</a>
+
+            <a href="../index.html#about">About</a>
+
+            <a href="../index.html#projects" class="active">Projects</a>
+
+            <a href="../index.html#contact">Contact</a>
+
+        </nav>
+
+        <a href="../assets/resume/James_Dsouza_Resume.pdf"
+           class="btn btn-primary"
+           download>
+            Resume
+        </a>
+
+    </div>
+
+</header>
+
+<!-- =====================================
+CASE STUDY HERO
+====================================== -->
+<section class="case-hero">
+    <div class="container">
+        <span class="case-tag">
+            Excel VBA | Process Automation | Dropbox | Catalog Operations
+        </span>
+        <h1>Automating Product Image Link Management Using Excel VBA
+        </h1>
+        <p>
+            Designed a two-step Excel VBA automation that extracts and rearranges
+            Dropbox image links, reducing a repetitive manual catalog process from
+            over an hour to just 5–10 minutes while improving accuracy and consistency.
+        </p>
+    </div>
+</section>
+<section id="summary" class="project-summary reveal">
+    <div class="container">
+        <div class="section-title">
+            <p>PROJECT SUMMARY</p>
+            <h2>At a Glance</h2>
+        </div>
+        <div class="summary-grid">
+            <div class="summary-card">
+                <span>Role</span>
+                <h3>Process Automation</h3>
+            </div>
+            <div class="summary-card">
+                <span>Technology</span>
+                <h3>Excel VBA</h3>
+            </div>
+            <div class="summary-card">
+                <span>Platform</span>
+                <h3>Dropbox + Excel</h3>
+            </div>
+            <div class="summary-card">
+                <span>Problem</span>
+                <h3>Manual image link management</h3>
+            </div>
+            <div class="summary-card">
+                <span>Solution Type</span>
+                <h3>VBA Automation</h3>
+            </div>
+            <div class="summary-card">
+                <span>Time Saved</span>
+                <h3>5–10 Minutes</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="challenge" class="challenge-section reveal">
+    <div class="container">
+        <div class="section-title">
+            <p>BUSINESS CHALLENGE</p>
+            <h2>The Problem</h2>
+        </div>
+        <div class="content-card">
+            <p>
+                Every product image uploaded for marketplace listings required
+                individual Dropbox links. Since each SKU could contain multiple images,
+                copying links one by one was repetitive, slow, and prone to human error.
+                Whenever branding or product images were updated, the entire process had to
+                be repeated.
+            </p>
+            <ul>
+                <li>Individual image links copied manually</li>
+                <li>Repetitive copy-paste work</li>
+                <li>Difficult to manage hundreds of product images</li>
+                <li>High possibility of incorrect image sequence</li>
+                <li>Time-consuming catalog updates</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="old-workflow" class="workflow-section reveal">
+    <div class="container">
+
+        <div class="section-title">
+            <p>OLD WORKFLOW</p>
+            <h2>Manual Process Before Automation</h2>
+            <span>
+                Product image updates required multiple manual steps across
+                Google Drive, Dropbox, and Excel. Each product image link had
+                to be copied individually, making the process slow and prone
+                to human error.
+            </span>
+        </div>
+
+        <div class="workflow-grid">
+
+            <div class="workflow-step">
+                <div class="step-number">01</div>
+                <h4>Image Quality Check</h4>
+                <p>
+                    Open the product collection folder in Google Drive and
+                    verify spelling, image alignment, arrows, and product
+                    features before approval.
+                </p>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">02</div>
+                <h4>Download Approved Images</h4>
+                <p>
+                    Download the finalized image folder after completing the
+                    quality check and branding review.
+                </p>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">03</div>
+                <h4>Upload to Dropbox</h4>
+                <p>
+                    Upload the complete folder to Dropbox to generate shareable
+                    image links for marketplace listings.
+                </p>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">04</div>
+                <h4>Copy Individual Links</h4>
+                <p>
+                    Open every image separately, copy its Dropbox link, and
+                    repeat the process for all product images.
+                </p>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">05</div>
+                <h4>Paste into Excel</h4>
+                <p>
+                    Paste every image URL into the correct Excel column while
+                    maintaining the required image sequence manually.
+                </p>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">06</div>
+                <h4>Final Verification</h4>
+                <p>
+                    Review all links again to ensure the correct image order,
+                    reduce errors, and avoid incorrect marketplace uploads.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="new-workflow" class="workflow-section reveal">
+    <div class="container">
+
+        <div class="section-title">
+            <p>NEW WORKFLOW</p>
+            <h2>Automated Process Using Excel VBA</h2>
+            <span>
+                Instead of copying every Dropbox image link manually, I built
+                an Excel VBA solution that extracts and arranges image links
+                automatically. The process reduced repetitive work and
+                completed image link preparation in just 5–10 minutes.
+            </span>
+        </div>
+
+        <div class="workflow-grid">
+
+            <div class="workflow-step">
+                <div class="step-number">01</div>
+                <h4>Image Quality Check</h4>
+                <p>
+                    Verify all product images for spelling, alignment,
+                    arrows, and product features before uploading.
+                </p>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">02</div>
+                <h4>Upload Images to Dropbox</h4>
+                <p>
+                    Upload the approved image folder to Dropbox while ensuring
+                    every image follows the required naming convention.
+                </p>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">03</div>
+                <h4>Copy Folder Contents</h4>
+                <p>
+                    Open the Dropbox folder in Opera browser, select all image
+                    files, copy them, and paste the data directly into Excel
+                    in one operation.
+                </p>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">04</div>
+                <h4>Run VBA Link Extractor</h4>
+                <p>
+                    Execute the first VBA macro to extract valid Dropbox
+                    hyperlinks from the copied data automatically.
+                </p>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">05</div>
+                <h4>Run VBA Link Organizer</h4>
+                <p>
+                    Execute the second VBA macro to arrange image links into
+                    the required sequence for marketplace uploads.
+                </p>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">06</div>
+                <h4>Ready for Upload</h4>
+                <p>
+                    The final Excel sheet is generated with correctly ordered
+                    image links, reducing manual effort and completing the
+                    process in approximately 5–10 minutes.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="vba-workflow" class="workflow-section reveal">
+    <div class="container">
+
+        <div class="section-title">
+            <p>HOW THE VBA WORKS</p>
+            <h2>Automation Logic</h2>
+            <span>
+                The automation consists of two VBA macros that work together to
+                extract Dropbox image hyperlinks and arrange them into the
+                required sequence for marketplace uploads.
+            </span>
+        </div>
+
+        <div class="workflow-grid">
+
+            <div class="workflow-step">
+                <div class="step-number">01</div>
+                <h4>Paste Dropbox Data</h4>
+                <p>
+                    Copy all image entries from the Dropbox folder and paste
+                    them into the Excel worksheet in a single operation.
+                </p>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">02</div>
+                <h4>Read Cell Data</h4>
+                <p>
+                    The VBA macro scans each populated row and identifies the
+                    embedded Dropbox hyperlinks attached to the pasted files.
+                </p>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">03</div>
+                <h4>Extract Hyperlinks</h4>
+                <p>
+                    The first macro extracts the actual Dropbox URLs and writes
+                    them into dedicated Excel cells, eliminating manual
+                    copy-and-paste work.
+                </p>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">04</div>
+                <h4>Identify Image Sequence</h4>
+                <p>
+                    Based on the image filenames, the VBA recognizes the
+                    required order such as Main Image, S1, S2, S3 and other
+                    supporting images.
+                </p>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">05</div>
+                <h4>Arrange Image Links</h4>
+                <p>
+                    The second VBA macro automatically rearranges all extracted
+                    links into the correct sequence required for marketplace
+                    uploads.
+                </p>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">06</div>
+                <h4>Generate Final Output</h4>
+                <p>
+                    A clean, standardized Excel sheet is produced with correctly
+                    ordered image links, ready for bulk catalog uploads.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="comparison" class="before-after reveal">
+<div class="container">
+<div class="section-title">
+<p>TRANSFORMATION</p>
+<h2>Before vs After</h2>
+</div>
+<div class="comparison-grid">
+<div class="comparison-card before">
+<h3>Before</h3>
+<ul>
+<li>Copy each image link manually</li>
+<li>Repeated copy-paste</li>
+<li>High manual effort</li>
+<li>Inconsistent sequence</li>
+<li>30-45 minutes</li>
+<li>Error-prone</li>
+</ul>
+</div>
+<div class="comparison-card after">
+<h3>After</h3>
+<ul>
+<li>Bulk extraction</li>
+<li>One-click VBA</li>
+<li>Automated</li>
+<li>Standardized</li>
+<li>5–10 minutes</li>
+<li>Reliable</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="objectives" class="objectives-section reveal">
+<div class="container">
+<div class="section-title">
+<p>OBJECTIVES</p>
+<h2>Project Goals</h2>
+</div>
+<div class="objective-grid">
+<div class="objective-card">⏱️
+5–10 Minutes
+Average Processing Time</div>
+<div class="objective-card">⚡
+Bulk Extraction
+Instead of Individual Copy</div>
+<div class="objective-card">📂
+100%
+Standardized Image Order</div>
+<div class="objective-card">✔
+Reduced
+Manual Effort</div>
+<div class="objective-card">🔄
+Reusable
+Across Multiple Products</div>
+<div class="objective-card">📈
+Improved
+Catalog Efficiency</div>
+</div>
+</div>
+</section>
+<section id="responsibilities" class="responsibilities-section reveal">
+<div class="container">
+<div class="section-title">
+<p>RESPONSIBILITIES</p>
+<h2>What I Worked On</h2>
+</div>
+<div class="responsibility-grid">
+<div class="responsibility-card">
+<h3>Workflow Analysis</h3>
+<p>
+Studied the manual process and identified repetitive tasks suitable for automation.
+</p>
+</div>
+<div class="responsibility-card">
+<h3>Excel VBA Development</h3>
+<p>
+Developed an Excel VBA solution to automate image link arrangement.
+</p>
+</div>
+<div class="responsibility-card">
+<h3>Dropbox Link Management</h3>
+<p>
+Extracted and organized product image links from Dropbox.
+</p>
+</div>
+<div class="responsibility-card">
+<h3>Image Standardization</h3>
+<p>
+Created a consistent image naming format (S, S1, S2...) for automation.
+</p>
+</div>
+<div class="responsibility-card">
+<h3>Testing & Validation</h3>
+<p>
+Validated different SKU scenarios to ensure accurate output.
+</p>
+</div>
+<div class="responsibility-card">
+<h3>Process Optimization</h3>
+<p>
+Reduced repetitive work while improving catalog consistency.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+
+<section id="tools" class="tools-section reveal">
+<div class="container">
+<div class="section-title">
+<p>TOOLS & TECHNOLOGIES</p>
+<h2>Technology Stack</h2>
+</div>
+<div class="badge-group">
+<span>Microsoft Excel</span>
+<span>Excel VBA</span>
+<span>Dropbox</span>
+<span>Opera Browser</span>
+<span>Catalog Management</span>
+<span>Workflow Automation</span>
+</div>
+</div>
+</section>
+<section id="impact" class="impact-section reveal">
+<div class="container">
+<div class="section-title">
+<p>BUSINESS IMPACT</p>
+<h2>Project Results</h2>
+</div>
+<div class="impact-grid">
+<div class="impact-card">
+<h3>Reduced</h3>
+<p>Manual Work</p>
+</div>
+<div class="impact-card">
+<h3>Improved</h3>
+<p>Workflow Accuracy</p>
+</div>
+<div class="impact-card">
+<h3>Standardized</h3>
+<p>Image Naming</p>
+</div>
+<div class="impact-card">
+<h3>Faster</h3>
+<p>Catalog Updates</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="learnings" class="learnings-section reveal">
+    <div class="container">
+        <div class="section-title">
+            <p>KEY LEARNINGS</p>
+            <h2>Insights</h2>
+        </div>
+        <div class="learning-grid">
+            <div class="learning-card">
+                <h3>Process First</h3>
+                <p>Understanding the manual workflow before writing code helped identify the biggest automation opportunities.</p>
+            </div>
+            <div class="learning-card">
+                <h3>Automation</h3>
+                <p>Simple VBA macros can eliminate repetitive tasks and significantly reduce processing time.</p>
+            </div>
+            <div class="learning-card">
+                <h3>Standardization</h3>
+                <p>
+                Consistent image naming is essential for reliable automation.
+                </p>
+            </div>
+            <div class="learning-card">
+                <h3>Problem Solving</h3>
+                <p>
+                The best automation solutions focus on improving business efficiency rather than simply reducing clicks.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================
+CASE STUDY NAVIGATION
+====================================== -->
+<div class="case-navigation">
+    <div class="container">
+        <a href="../index.html#projects" class="case-nav-btn">
+            ← Back to Portfolio
+        </a>
+    </div>
+</div>
+</head>
+</main>
+<script src="../js/main.js"></script>
+</body>
+</html>
