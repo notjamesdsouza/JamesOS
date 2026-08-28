@@ -548,24 +548,6 @@ MARKETPLACE EXPERIENCE
 .marketplaces-section{
     padding:var(--section-padding) 0;
 }
-.marketplace-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:var(--gap-sm);
-    border-color: var(--border-hover);
-}
-.marketplace-group{
-    margin-top:60px;
-}
-.marketplace-group h3{
-    margin-bottom:25px;
-    font-size:26px;
-}
-
-.marketplace-card:hover{
-    transform:translateY(-8px);
-    border-color:var(--border-hover);
-}
 
 .toolkit-section{
 padding:140px 8%;
