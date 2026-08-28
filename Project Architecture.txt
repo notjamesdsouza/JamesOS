@@ -16,4 +16,3 @@ For example:
 <a href="https://learn.microsoft.com/..." target="_blank">
 
 Change needed
-Change the Automation project to new updated API
