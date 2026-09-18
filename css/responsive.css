@@ -77,9 +77,6 @@
     .footer-grid{
         grid-template-columns:1fr;
     }
-    .marketplace-grid{
-        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    }
     .nav-toggle{
         display:flex;
     }

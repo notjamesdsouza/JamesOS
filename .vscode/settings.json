@@ -77,7 +77,7 @@
     // WORKBENCH
     // ==========================================================
 
-    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.tree.indent": 20,
     "workbench.startupEditor": "none",
