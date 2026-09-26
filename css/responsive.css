@@ -1,58 +1,70 @@
 /* ========================================
    WEBSITE (1024px)
 ======================================== */
-@media (max-width:1024px){
-    .hero{
-        display:flex;
-        flex-direction:column;
-        gap:60px;
+@media (max-width:1024px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
     }
-    .about-grid{
-        grid-template-columns:1fr;
+
+    .about-grid {
+        grid-template-columns: 1fr;
     }
+
     .toolkit-wrapper,
     .learning-grid,
     .certificate-grid,
-    .deliverables-grid{
-       grid-template-columns:repeat(2,1fr);
+    .deliverables-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .project-list{
-        gap:25px;
+
+    .project-list {
+        gap: 25px;
     }
 
 }
 
-@media (max-width:992px){
-    .hero-grid{
-        grid-template-columns:1fr;
-        text-align:center;
+@media (max-width:992px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
     }
-    .hero-buttons{
-        justify-content:center;
+
+    .hero-buttons {
+        justify-content: center;
     }
-    .hero p{
-        margin-inline:auto;
+
+    .hero p {
+        margin-inline: auto;
     }
-    .hero-image{
-        margin-top:40px;
+
+    .hero-image {
+        margin-top: 40px;
     }
-    .hero h1{
-        font-size:52px;
+
+    .hero h1 {
+        font-size: 52px;
     }
-    .hero h2{
-        font-size:28px;
+
+    .hero h2 {
+        font-size: 28px;
     }
-    .services-grid{
-        grid-template-columns:repeat(4,1fr);
+
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
-    .impact-grid{
-        grid-template-columns:repeat(2,1fr);
+
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .timeline{
-        flex-direction:column;
+
+    .timeline {
+        flex-direction: column;
     }
-    .timeline-arrow{
-        transform:rotate(90deg);
+
+    .timeline-arrow {
+        transform: rotate(90deg);
     }
 
 }
@@ -60,7 +72,8 @@
 /* ========================================
    MOBILE (768px)
 ======================================== */
-@media(max-width:768px){
+@media(max-width:768px) {
+
     .responsibility-grid,
     .comparison-grid,
     .dashboard-grid,
@@ -74,98 +87,154 @@
     .learning-grid,
     .contact-wrapper,
     .certificate-grid,
-    .footer-grid{
-        grid-template-columns:1fr;
+    .footer-grid {
+        grid-template-columns: 1fr;
     }
-    .nav-toggle{
-        display:flex;
+
+    /* .marketplace-grid intentionally NOT overridden here anymore —
+       components.css already defines the correct 2-column mobile
+       layout for this breakpoint (repeat(2, minmax(0,1fr))) along
+       with matching card/logo sizing. This rule used to redefine it
+       with auto-fit/minmax(220px,1fr), which collapsed to a single
+       column on phone-width screens and silently won the cascade
+       since this file loads last. Removed to stop the conflict. */
+
+    /* Reduce card padding on mobile so content isn't cramped.
+       Cards built on var(--card-padding) (.deliverable-card,
+       .approach-card, .category-card, .about-highlight, .hero-card,
+       .project-content) pick this up automatically: */
+    :root {
+        --card-padding: 20px;
     }
-    .site-nav{
-        position:absolute;
-        top:100%;
-        left:0;
-        width:100%;
-        background:#07111F;
-        flex-direction:column;
-        align-items:center;
-        padding:30px 0;
-        gap:24px;
-        border-top:1px solid rgba(255,255,255,.08);
-        opacity:0;
-        visibility:hidden;
-        pointer-events:none;
-        transform:translateY(-20px);
+
+    /* These cards use hardcoded padding in components.css instead of
+       the variable, so they need explicit overrides here: */
+    .impact-card {
+        padding: 24px;
+    }
+
+    .contact-info,
+    .contact-cta {
+        padding: 22px;
+    }
+
+    .certificate-card,
+    .toolkit-card,
+    .learning-card {
+        padding: 20px;
+    }
+
+    .timeline-content {
+        padding: 20px;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .site-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #07111F;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+        gap: 24px;
+        border-top: 1px solid rgba(255, 255, 255, .08);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(-20px);
         transition:
-        opacity .3s ease,
-        visibility .3s ease,
-        transform .3s ease;
+            opacity .3s ease,
+            visibility .3s ease,
+            transform .3s ease;
     }
-    .site-nav.active{
-        opacity:1;
-        visibility:visible;
-        pointer-events:auto;
-        transform:translateY(0);
+
+    .site-nav.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
     }
-    .section-heading h2{
-         font-size:34px;
+
+    /* Was .section-heading h2 — that class never appears in the markup
+       (actual wrappers are things like "deliverables-section-heading",
+       and the <h2> itself sits inside .section-title). Fixed to match
+       the real DOM so headings actually shrink on mobile. */
+    .section-title h2 {
+        font-size: 34px;
     }
-    .hero h1{
-        font-size:42px;
+
+    .hero h1 {
+        font-size: 42px;
     }
-    .toolkit-wrapper{
-        grid-template-columns:1fr;
+
+    .toolkit-wrapper {
+        grid-template-columns: 1fr;
     }
-    .footer-bottom{
-        flex-direction:column;
-        gap:15px;
-        text-align:center;
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
     }
-    .project-card{
-        padding:25px;
+
+    .project-card {
+        padding: 25px;
     }
 }
 
-@media(max-width:650px){
-    .impact-grid{
-        grid-template-columns:1fr;
+@media(max-width:650px) {
+    .impact-grid {
+        grid-template-columns: 1fr;
     }
-    .hero{
-        padding-top:calc(var(--header-height) + 40px);
+
+    .hero {
+        padding-top: calc(var(--header-height) + 40px);
     }
+
     .btn,
-    .btn-outline{
-        width:100%;
-        text-align:center;
+    .btn-outline {
+        width: 100%;
+        text-align: center;
     }
 }
 
 /* ========================================
    SMALL MOBILE (480px)
 ======================================== */
-@media (max-width:480px){
-    .hero{
-       padding-top:80px;
+@media (max-width:480px) {
+    .hero {
+        padding-top: 80px;
     }
-    .hero h1{
-        font-size:34px;
+
+    .hero h1 {
+        font-size: 34px;
     }
-    .hero-actions{
-        display:flex;
-        flex-direction:column;
-        gap:15px;
+
+    .hero-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
-    .section-heading{
-        text-align:center;
+
+    /* Same selector-name bug as above — was .section-heading */
+    .section-title {
+        text-align: center;
     }
 }
+
 /*=========================================
 CONTACT SECTION LAYOUT
 =========================================*/
 
-.contact-wrapper{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-    align-items:start;
-    margin-top:70px;
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-top: 70px;
 }
