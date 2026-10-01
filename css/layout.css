@@ -126,12 +126,25 @@ Navigation
     align-items: center;
 }
 
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-top: 70px;
+}
+
 .site-nav {
     display: flex;
     gap: 34px;
 }
 
+.site-nav a.active {
+    color: var(--secondary);
+}
+
 .site-nav a {
+    position: relative;
     color: var(--text-light);
     transition: var(--transition);
     font-weight: 500;
@@ -141,8 +154,19 @@ Navigation
     color: white;
 }
 
-.site-nav a.active {
-    color: var(--secondary);
+.site-nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: .3s;
+}
+
+.site-nav a:hover::after {
+    width: 100%;
 }
 
 /*==================================================
@@ -190,7 +214,7 @@ HERO
     display: grid;
     grid-template-columns: 1.2fr .8fr;
     gap: 50px;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .hero-badge {
@@ -199,7 +223,7 @@ HERO
     border: 1px solid var(--border);
     border-radius: 40px;
     color: var(--secondary);
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 25px;
 }
 
@@ -227,6 +251,7 @@ HERO
 .hero-image {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .hero-card h3 {
@@ -235,6 +260,7 @@ HERO
 }
 
 .hero-card>p {
+    margin-top: auto;
     margin-bottom: 35px;
 }
 
@@ -307,17 +333,6 @@ PROJECTS
     box-shadow: var(--shadow-md);
 }
 
-.flipkart-bg {
-    background: linear-gradient(135deg, #F59E0B, #B45309);
-}
-
-.automation-bg {
-    background: linear-gradient(135deg, #4F46E5, #312E81);
-}
-
-.portfolio-bg {
-    background: linear-gradient(135deg, #06B6D4, #0F766E);
-}
 
 .project-content h3 {
     margin-bottom: 18px;
@@ -401,6 +416,16 @@ FOOTER
     transition: .3s;
 }
 
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 20px;
+}
+
+.footer-links h3 {
+    grid-column: 1 / -1;
+}
+
 .footer-links a:hover,
 .footer-social a:hover {
     color: white;
@@ -414,13 +439,6 @@ FOOTER
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-}
-
-/*=========================
-Journey
-==========================*/
-.journey {
-    padding: var(--section-padding) 8%;
 }
 
 .timeline {
@@ -452,11 +470,6 @@ Journey
     display: block;
     margin-bottom: 20px;
     color: var(--secondary);
-}
-
-.content p {
-    color: var(--text-light);
-    line-height: 1.8;
 }
 
 .timeline-list {
@@ -634,7 +647,7 @@ MARKETPLACE EXPERIENCE
 }
 
 .toolkit-section {
-    padding: 140px 8%;
+    padding: var(--section-padding) 0;
 }
 
 .toolkit-wrapper {
@@ -645,7 +658,7 @@ MARKETPLACE EXPERIENCE
 }
 
 .certifications-section {
-    padding: 140px 8%;
+    padding: var(--section-padding) 0;
 }
 
 .certificate-grid {
@@ -655,16 +668,13 @@ MARKETPLACE EXPERIENCE
     margin-top: 70px;
 }
 
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--gap-md);
-    margin-top: 70px;
-    margin-left: 35px;
-    margin-right: 35px;
+.contact-section {
+    padding: var(--section-padding) 0;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.contact-section {
-    padding: 140px 8%;
-    grid-template-columns: repeat(2, 1fr);
+.wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }

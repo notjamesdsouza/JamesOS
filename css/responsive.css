@@ -51,9 +51,6 @@
         font-size: 28px;
     }
 
-    .services-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
 
     .impact-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -61,10 +58,6 @@
 
     .timeline {
         flex-direction: column;
-    }
-
-    .timeline-arrow {
-        transform: rotate(90deg);
     }
 
 }
@@ -91,18 +84,6 @@
         grid-template-columns: 1fr;
     }
 
-    /* .marketplace-grid intentionally NOT overridden here anymore —
-       components.css already defines the correct 2-column mobile
-       layout for this breakpoint (repeat(2, minmax(0,1fr))) along
-       with matching card/logo sizing. This rule used to redefine it
-       with auto-fit/minmax(220px,1fr), which collapsed to a single
-       column on phone-width screens and silently won the cascade
-       since this file loads last. Removed to stop the conflict. */
-
-    /* Reduce card padding on mobile so content isn't cramped.
-       Cards built on var(--card-padding) (.deliverable-card,
-       .approach-card, .category-card, .about-highlight, .hero-card,
-       .project-content) pick this up automatically: */
     :root {
         --card-padding: 20px;
     }
@@ -196,8 +177,7 @@
         padding-top: calc(var(--header-height) + 40px);
     }
 
-    .btn,
-    .btn-outline {
+    .btn {
         width: 100%;
         text-align: center;
     }
@@ -215,26 +195,8 @@
         font-size: 34px;
     }
 
-    .hero-actions {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
     /* Same selector-name bug as above — was .section-heading */
     .section-title {
         text-align: center;
     }
-}
-
-/*=========================================
-CONTACT SECTION LAYOUT
-=========================================*/
-
-.contact-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: start;
-    margin-top: 70px;
 }

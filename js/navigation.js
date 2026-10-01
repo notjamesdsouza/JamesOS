@@ -18,10 +18,10 @@ if (navToggle && navMenu) {
 // =============================
 navLinks.forEach(link => {
     link.addEventListener("click", () => {
-        if(navMenu){
+        if (navMenu) {
             navMenu.classList.remove("active");
         }
-        if(navToggle){
+        if (navToggle) {
             navToggle.classList.remove("active");
         }
     });
@@ -30,18 +30,18 @@ navLinks.forEach(link => {
 // ACTIVE NAVIGATION
 // =============================
 const sections = document.querySelectorAll("section");
-function updateActiveSection(){
+function updateActiveSection() {
     let current = "";
-    sections.forEach(section=>{
-        const top = section.offsetTop-150;
+    sections.forEach(section => {
+        const top = section.offsetTop - 150;
         const height = section.offsetHeight;
-        if(pageYOffset >= top){
+        if (pageYOffset >= top) {
             current = section.id;
         }
     });
-    navLinks.forEach(link=>{
+    navLinks.forEach(link => {
         link.classList.remove("active");
-        if(link.getAttribute("href")==="#"+current){
+        if (link.getAttribute("href") === "#" + current) {
             link.classList.add("active");
         }
     });
@@ -50,8 +50,8 @@ window.addEventListener("scroll", updateActiveSection);
 
 const header = document.querySelector(".site-header");
 
-window.addEventListener("scroll",()=>{
-    if(window.scrollY>50){
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
         header.classList.add("show");
     }
 });
