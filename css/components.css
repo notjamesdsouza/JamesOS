@@ -162,6 +162,7 @@ IMPACT
     border: 1px solid var(--surface-light);
     text-align: center;
     transition: .35s;
+    min-width: 0;
 }
 
 .impact-card:hover {
@@ -473,6 +474,14 @@ MARKETPLACE EXPERIENCE
     padding: 12px 0;
     border-bottom: 1px solid rgba(255, 255, 255, .05);
     color: var(--text-light);
+}
+
+.category-group {
+    margin-top: 55px;
+}
+
+.category-group h3 {
+    margin-bottom: 20px;
 }
 
 /* Sub-items nested under a category item (e.g. materials under

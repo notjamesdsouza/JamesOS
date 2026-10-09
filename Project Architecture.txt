@@ -6,6 +6,17 @@ git remote add origin https://github.com/notjamesdsouza/JamesOS
 
 saving command in vscode
 
+
+
+
+# Step 1: Pack up all your latest file edits
 git add .
-git commit -m "Describe the changes"
-git push origin HEAD
+
+# Step 2: Lock in your changes with a save message
+git commit -m "Update live page"
+
+# Step 3: Make sure your local computer is pointing to 'main'
+git branch -M main
+
+# Step 4: Safely push the edits straight into your existing live branch
+git push origin main
